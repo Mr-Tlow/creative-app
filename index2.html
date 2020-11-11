@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Creative Chat app</title>
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="main-style.css">
+	<link rel="stylesheet" type="text/css" href="widgetLiveScore.css">
+	<script src="jquery.js"></script>
+	<script src="jqueryGlobals.js"></script>
+	<script src="jquery.widgetLiveScore.js" type="text/javascript"></script>
+    <!-- Start of Async Drift Code -->
+			<script>
+				"use strict";
+				
+				!function() {
+				var t = window.driftt = window.drift = window.driftt || [];
+				if (!t.init) {
+					if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+					t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+					t.factory = function(e) {
+					return function() {
+						var n = Array.prototype.slice.call(arguments);
+						return n.unshift(e), t.push(n), t;
+					};
+					}, t.methods.forEach(function(e) {
+					t[e] = t.factory(e);
+					}), t.load = function(t) {
+					var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+					o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+					var i = document.getElementsByTagName("script")[0];
+					i.parentNode.insertBefore(o, i);
+					};
+				}
+				}();
+				drift.SNIPPET_VERSION = '0.3.1';
+				drift.load('sf6k3fgdp2s7');
+				</script>
+	<!-- End of Async Drift Code -->
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="index.html">Creative chat app</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+	<br>
+<div class="container">
+	<section id="widgetLiveScore"></section>
+</div>
+</body>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$('#widgetLiveScore').widgetLiveScore({
+			widgetWidth: '100%'
+		});
+	});
+
+</script>
+</html>
